@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.input {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.saisie-tache {
+    flex-grow: 1;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.saisie-tache:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.btn-ajouter {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-ajouter:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    font-size: 0.875rem;
+    height: 1.2rem;
+    display: block;
+    text-align: left;
+}
+
+.tache {
+    list-style-type: none;
+    text-align: left;
+}
+
+.tache li {
+    background-color: #e9ecef;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.tache li:last-child {
+    margin-bottom: 0;
+}
+
+.btn_suprimer {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #dc3545;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn_suprimer:hover {
+    background-color: #c82333;
+}
+
+.btn_modifier {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #28a745; /* Changed color to a more standard green */
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn_modifier:hover {
+    background-color: #218838;
+}
+
+/* New CSS to align buttons side-by-side */
+.tache li {
+    /* Existing styles */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tache li .btn_modifier,
+.tache li .btn_suprimer {
+    margin-left: 0.5rem; /* Adds space between buttons */
+}
